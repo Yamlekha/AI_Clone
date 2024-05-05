@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  background-image: url("Assets/background.jpg"); /* Add your background image path */
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 120%;
+  height: 100%;
+}
+.container2 {
+  padding-top: 4%;
+}
+.logo {
+  padding-top: 0%;
+  width: 30px; /* Adjust width as needed */
+  height: 30px; /* Maintain aspect ratio */
+  margin-right: 10px; /*Add margin between logo and text */
+}
+.input-type {
+  display: flex;
+}
+.input-type input[type="text"] {
+  width: 610px; /* Increased width for the text input */
+  padding: 10px; /* Increased padding for the text input */
+  font-size: 16px; /* Increased font size for the text input */
+  background-color: transparent;
+  flex-grow: 1
+}
+
+.input-type input[type="submit"] {
+  width: 100px; /* Decreased width for the submit input */
+  padding: 8px 16px; /* Decreased padding for the submit input */
+  font-size: 14px; /* Decreased font size for the submit input */
+  margin-left: 5px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+}
+
+.container input {
+  padding: 2%;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.history {
+  width: 80%;
+  height: 100%; /* Increase the height */
+  padding-top: 1.5%;
+  padding-left: 4%;
+  border-left: 1px solid black;
+  position: relative;
+  overflow-y: auto;
+}
+.history::before {
+  content: "";
+  position: absolute;
+  top: 90px; /* Adjust as needed */
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.new-button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(to right, rgb(155, 182, 155) , white); 
+}
+.bordered-paragraph {
+  border: 1px solid black;
+  padding: 2%;
+  width: 100%;
+  height: 300px;
+  color: black; /* Placeholder text color */
+  border: groove;
+  background-color: rgb(81, 71, 71);
+}
+
+.bordered-paragraph[contenteditable]:empty:before {
+  content: attr(placeholder);
+  color: white; /* Placeholder text color */
+}
+.bordered-paragraph-right {
+  border: 1px solid black;
+  width: 90%;
+  /* height: 100%; */
+  color: gray; /* Placeholder text color */
+  display: flex;
+  height: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: groove;
+  background-color: rgb(81, 71, 71);
+  overflow-y: auto;
+  flex-direction: column;
+}
+.bordered-paragraph-right[contenteditable]:empty:before {
+  content: attr(placeholder);
+  color: gray; /* Placeholder text color */
+}
+.right-container {
+  display: flex;
+  height: 100%;
+}
+.right-headline {
+  display: flex;
+  padding-top:3% ;
+}
+.right-headline .text {
+  padding-bottom: 3%;
+  margin-right: 300px;
+}
+.paragraphs{
+    margin: 8px 6px;
+}
